@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WireframeRenderer/Script/WireFrameClipRenderer.cs">
+    <Files>
+      <File FileName="Assets/Plugins/MeshDebugger/Shaders/WireFrame.shader" Line="9" Column="20" />
+      <File FileName="Assets/WireframeRenderer/Script/StaticWireframeRenderer.cs" Line="35" Column="32" />
+      <File FileName="Assets/WireframeRenderer/Script/WireFrameClipRenderer.cs" Line="162" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

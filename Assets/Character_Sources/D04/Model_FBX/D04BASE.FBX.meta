@@ -1,0 +1,1766 @@
+fileFormatVersion: 2
+guid: 6fd37a1cbe8ecd244aec24c2a19d301f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bip01
+    100002: Bip01 Head
+    100004: Bip01 L Calf
+    100006: Bip01 L Clavicle
+    100008: Bip01 L Finger0
+    100010: Bip01 L Finger01
+    100012: Bip01 L Finger1
+    100014: Bip01 L Finger11
+    100016: Bip01 L Finger2
+    100018: Bip01 L Finger21
+    100020: Bip01 L Finger3
+    100022: Bip01 L Finger31
+    100024: Bip01 L Foot
+    100026: Bip01 L Forearm
+    100028: Bip01 L Hand
+    100030: Bip01 L Thigh
+    100032: Bip01 L Toe0
+    100034: Bip01 L UpperArm
+    100036: Bip01 Neck
+    100038: Bip01 Pelvis
+    100040: Bip01 Ponytail1
+    100042: Bip01 Ponytail11
+    100044: Bip01 Ponytail12
+    100046: Bip01 Ponytail13
+    100048: Bip01 Ponytail14
+    100050: Bip01 Prop2
+    100052: Bip01 R Calf
+    100054: Bip01 R Clavicle
+    100056: Bip01 R Finger0
+    100058: Bip01 R Finger01
+    100060: Bip01 R Finger1
+    100062: Bip01 R Finger11
+    100064: Bip01 R Finger2
+    100066: Bip01 R Finger21
+    100068: Bip01 R Finger3
+    100070: Bip01 R Finger31
+    100072: Bip01 R Foot
+    100074: Bip01 R Forearm
+    100076: Bip01 R Hand
+    100078: Bip01 R Thigh
+    100080: Bip01 R Toe0
+    100082: Bip01 R UpperArm
+    100084: Bip01 Spine
+    100086: Bip01 Spine1
+    100088: Bip01 Spine2
+    100090: Bip01 Xtra01_Skirt_F_L
+    100092: Bip01 Xtra01_Skirt_F_R
+    100094: Bip01 Xtra01_Skirt_S_L
+    100096: Bip01 Xtra01_Skirt_S_L 1
+    100098: Bip01 Xtra01_Skirt_S_R
+    100100: Bip01 Xtra01_Skirt_S_R 1
+    100102: Bip01_wave_ Ponytail2
+    100104: Bip01_wave_ Ponytail21
+    100106: Bip01_wave_ Ponytail22
+    100108: Bone001_Left_bust
+    100110: Bone001_Left_Eye
+    100112: Bone001_Righ Eye
+    100114: Bone001_Righ_bust
+    100116: Circle001
+    100118: CLUB_EFFC_DUMMY
+    100120: D04_BLUSHER
+    100122: D04_HDBACK
+    100124: D04_HDBLW
+    100126: D04_HDEYE
+    100128: D04_HDMTH
+    100130: D04_L_EYE
+    100132: D04_R_EYE
+    100134: //RootNode
+    100136: D04BASE
+    100138: Point001
+    100140: Point003
+    100142: Point006
+    100144: Point009
+    100146: LeftHandIndex1
+    100148: LeftHandIndex2
+    100150: LeftHandMiddle1
+    100152: LeftHandMiddle2
+    100154: LeftHandRing1
+    100156: LeftHandRing2
+    100158: LeftHandThumb1
+    100160: LeftHandThumb2
+    100162: RightHandIndex1
+    100164: RightHandIndex2
+    100166: RightHandMiddle1
+    100168: RightHandMiddle2
+    100170: RightHandRing1
+    100172: RightHandRing2
+    100174: RightHandThumb1
+    100176: RightHandThumb2
+    100178: Bip01 LeftHandIndex1
+    100180: Bip01 LeftHandIndex2
+    100182: Bip01 LeftHandMiddle1
+    100184: Bip01 LeftHandMiddle2
+    100186: Bip01 LeftHandRing1
+    100188: Bip01 LeftHandRing2
+    100190: Bip01 LeftHandThumb1
+    100192: Bip01 LeftHandThumb2
+    100194: Bip01 RightHandIndex1
+    100196: Bip01 RightHandIndex2
+    100198: Bip01 RightHandMiddle1
+    100200: Bip01 RightHandMiddle2
+    100202: Bip01 RightHandRing1
+    100204: Bip01 RightHandRing2
+    100206: Bip01 RightHandThumb1
+    100208: Bip01 RightHandThumb2
+    100210: Bip01 Ponytail2
+    100212: Bip01 Ponytail21
+    100214: Bip01 Ponytail22
+    100216: Bip01 Xtra01_Skirt_B_L
+    100218: Bip01 Xtra01_Skirt_B_R
+    100220: D04_HDBLW 1
+    100222: D04_LEYE
+    100224: D04_REYE
+    100226: Bip01 Footsteps
+    100228: Bip01 HeadNub
+    100230: Bip01 L Finger0Nub
+    100232: Bip01 L Finger1Nub
+    100234: Bip01 L Finger2Nub
+    100236: Bip01 L Finger3Nub
+    100238: Bip01 L Toe0Nub
+    100240: Bip01 Ponytail1Nub
+    100242: Bip01 Ponytail2Nub
+    100244: Bip01 R Finger0Nub
+    100246: Bip01 R Finger1Nub
+    100248: Bip01 R Finger2Nub
+    100250: Bip01 R Finger3Nub
+    100252: Bip01 R Toe0Nub
+    100254: Bip01 Xtra01_Skirt_B_L02
+    100256: Bip01 Xtra01_Skirt_B_L03
+    100258: Bip01 Xtra01_Skirt_B_LNub
+    100260: Bip01 Xtra01_Skirt_B_R02
+    100262: Bip01 Xtra01_Skirt_B_R03
+    100264: Bip01 Xtra01_Skirt_B_RNub
+    100266: Bip01 Xtra01_Skirt_F_L02
+    100268: Bip01 Xtra01_Skirt_F_L03
+    100270: Bip01 Xtra01_Skirt_F_LNub
+    100272: Bip01 Xtra01_Skirt_F_R02
+    100274: Bip01 Xtra01_Skirt_F_R03
+    100276: Bip01 Xtra01_Skirt_F_RNub
+    100278: Bip01 Xtra01_Skirt_S_L02
+    100280: Bip01 Xtra01_Skirt_S_L03
+    100282: Bip01 Xtra01_Skirt_S_LNub
+    100284: Bip01 Xtra01_Skirt_S_R02
+    100286: Bip01 Xtra01_Skirt_S_R03
+    100288: Bip01 Xtra01_Skirt_S_RNub
+    100290: Bone002_Left_Eye
+    100292: Bone002_Righ Eye
+    100294: CLUB_DUMMY
+    100296: CLUB_M01PD
+    100298: CLUB_M01PI
+    100300: CLUB_M01PK
+    100302: CLUB_M01PP
+    100304: CLUB_M02PD
+    100306: CLUB_M02PI
+    100308: CLUB_M02PK
+    100310: CLUB_M02PP
+    100312: CLUB_M03PD
+    100314: CLUB_M03PI
+    100316: CLUB_M03PK
+    100318: CLUB_M03PP
+    100320: CLUB_M04PD
+    100322: CLUB_M04PI
+    100324: CLUB_M04PK
+    100326: CLUB_M04PP
+    100328: CLUB_M05PD
+    100330: CLUB_M05PI
+    100332: CLUB_M05PK
+    100334: CLUB_M05PP
+    100336: CLUB_M06PD
+    100338: CLUB_M06PI
+    100340: CLUB_M06PK
+    100342: CLUB_M06PP
+    100344: CLUB_M07PD
+    100346: CLUB_M07PI
+    100348: CLUB_M07PK
+    100350: CLUB_M07PP
+    100352: CLUB_M08PD
+    100354: CLUB_M08PI
+    100356: CLUB_M08PK
+    100358: CLUB_M08PP
+    100360: CLUB_M09PD
+    100362: CLUB_M09PI
+    100364: CLUB_M09PK
+    100366: CLUB_M09PP
+    100368: CLUB_M10PD
+    100370: CLUB_M10PI
+    100372: CLUB_M10PK
+    100374: CLUB_M10PP
+    100376: CLUB_M11PD
+    100378: CLUB_M11PI
+    100380: CLUB_M11PK
+    100382: CLUB_M11PP
+    100384: CLUB_M14PD
+    100386: CLUB_M14PI
+    100388: CLUB_M14PK
+    100390: CLUB_M14PP
+    100392: CLUB_M15PD
+    100394: CLUB_M15PI
+    100396: CLUB_M15PK
+    100398: CLUB_M15PP
+    100400: CLUB_M16PD
+    100402: CLUB_M16PI
+    100404: CLUB_M16PK
+    100406: CLUB_M16PP
+    100408: CLUB_M50PD
+    100410: CLUB_M50PI
+    100412: CLUB_M50PK
+    100414: CLUB_M50PP
+    100416: D04_HDBLW001
+    100418: D04_HDBLW002
+    100420: D04_HDBLW003
+    100422: D04_HDBLW004
+    100424: D04_HDBLW005
+    100426: D04_HDEYE001
+    100428: D04_HDEYE002
+    100430: D04_HDEYE003
+    100432: D04_HDEYE004
+    100434: D04_HDEYE005
+    100436: D04_HDMTH001
+    100438: D04_HDMTH002
+    100440: D04_HDMTH003
+    100442: D04_HDMTH004
+    100444: D04_HDMTH005
+    100446: D04_HDMTH006
+    100448: D04_HDMTH007
+    100450: D04_HDMTH008
+    100452: D04_HDMTH009
+    100454: D04_LEYE001
+    100456: D04_LEYE002
+    100458: D04_LEYE003
+    100460: D04_LEYE004
+    100462: D04_LEYE005
+    100464: D04_REYE001
+    100466: D04_REYE002
+    100468: D04_REYE003
+    100470: D04_REYE004
+    100472: D04_REYE005
+    100474: D04BACK_Dummy
+    100476: D04CAP_Dummy
+    100478: D04GLASS_Dummy
+    100480: D04M01BODY
+    100482: D04M01HAIR
+    100484: D04M02BACK
+    100486: D04M02CAP_HAIR01
+    100488: D04M02GLASS
+    100490: D04M03BACK
+    100492: D04M03CAP_HAIR01
+    100494: D04M03GLASS
+    100496: D04M05CAP_HAIR01
+    100498: D04M05GLASS
+    100500: D04M07BACK
+    100502: D04M07CAP_HAIR91
+    100504: D04M07GLASS
+    100506: D04M08CAP_HAIR01
+    100508: D04M09BACK
+    100510: D04M09CAP_HAIR90
+    100512: D04M09GLASS
+    100514: D04M10BACK
+    100516: D04M10CAP_HAIR01
+    100518: D04M10GLASS
+    100520: D04M11GLASS
+    100522: D04M11HAIR
+    100524: D04M14BACK
+    100526: D04M14GLASS
+    100528: D04M14HAIR
+    100530: D04M15CAP_HAIR01
+    100532: D04M16BACK
+    100534: D04M16CAP_HAIR91
+    100536: D04M17BACK
+    100538: D04M17CAP_HAIR90
+    100540: D04M17GLASS
+    100542: D04M90BACK
+    100544: D04M90HAIR
+    100546: D04M91HAIR
+    100548: ExposeTransform001
+    100550: Eye Both_Handler
+    100552: Left Eye_Handler
+    100554: Point002
+    100556: Point003 1
+    100558: Point004
+    100560: Point004 1
+    100562: Point005
+    100564: Point007
+    100566: Point008
+    100568: Right Eye_Handler
+    100570: Bone001_Left_Breast
+    100572: Bone001_Righ_Breast
+    100574: Breast Handler
+    100576: Bip01 Xtra04_SKIRT
+    100578: Bone001_BACK
+    100580: Bip01 Xtra05_SLHAIR
+    100582: Bip01 Xtra05_SLHAIR02
+    100584: Bip01 Xtra05_SLHAIROpp
+    100586: Bip01 Xtra05_SLHAIROpp02
+    100588: D04_BLUSHE
+    100590: Bip01 Prop1
+    400000: Bip01
+    400002: Bip01 Head
+    400004: Bip01 L Calf
+    400006: Bip01 L Clavicle
+    400008: Bip01 L Finger0
+    400010: Bip01 L Finger01
+    400012: Bip01 L Finger1
+    400014: Bip01 L Finger11
+    400016: Bip01 L Finger2
+    400018: Bip01 L Finger21
+    400020: Bip01 L Finger3
+    400022: Bip01 L Finger31
+    400024: Bip01 L Foot
+    400026: Bip01 L Forearm
+    400028: Bip01 L Hand
+    400030: Bip01 L Thigh
+    400032: Bip01 L Toe0
+    400034: Bip01 L UpperArm
+    400036: Bip01 Neck
+    400038: Bip01 Pelvis
+    400040: Bip01 Ponytail1
+    400042: Bip01 Ponytail11
+    400044: Bip01 Ponytail12
+    400046: Bip01 Ponytail13
+    400048: Bip01 Ponytail14
+    400050: Bip01 Prop2
+    400052: Bip01 R Calf
+    400054: Bip01 R Clavicle
+    400056: Bip01 R Finger0
+    400058: Bip01 R Finger01
+    400060: Bip01 R Finger1
+    400062: Bip01 R Finger11
+    400064: Bip01 R Finger2
+    400066: Bip01 R Finger21
+    400068: Bip01 R Finger3
+    400070: Bip01 R Finger31
+    400072: Bip01 R Foot
+    400074: Bip01 R Forearm
+    400076: Bip01 R Hand
+    400078: Bip01 R Thigh
+    400080: Bip01 R Toe0
+    400082: Bip01 R UpperArm
+    400084: Bip01 Spine
+    400086: Bip01 Spine1
+    400088: Bip01 Spine2
+    400090: Bip01 Xtra01_Skirt_F_L
+    400092: Bip01 Xtra01_Skirt_F_R
+    400094: Bip01 Xtra01_Skirt_S_L
+    400096: Bip01 Xtra01_Skirt_S_L 1
+    400098: Bip01 Xtra01_Skirt_S_R
+    400100: Bip01 Xtra01_Skirt_S_R 1
+    400102: Bip01_wave_ Ponytail2
+    400104: Bip01_wave_ Ponytail21
+    400106: Bip01_wave_ Ponytail22
+    400108: Bone001_Left_bust
+    400110: Bone001_Left_Eye
+    400112: Bone001_Righ Eye
+    400114: Bone001_Righ_bust
+    400116: Circle001
+    400118: CLUB_EFFC_DUMMY
+    400120: D04_BLUSHER
+    400122: D04_HDBACK
+    400124: D04_HDBLW
+    400126: D04_HDEYE
+    400128: D04_HDMTH
+    400130: D04_L_EYE
+    400132: D04_R_EYE
+    400134: D04BASE
+    400136: //RootNode
+    400138: Point001
+    400140: Point003
+    400142: Point006
+    400144: Point009
+    400146: LeftHandIndex1
+    400148: LeftHandIndex2
+    400150: LeftHandMiddle1
+    400152: LeftHandMiddle2
+    400154: LeftHandRing1
+    400156: LeftHandRing2
+    400158: LeftHandThumb1
+    400160: LeftHandThumb2
+    400162: RightHandIndex1
+    400164: RightHandIndex2
+    400166: RightHandMiddle1
+    400168: RightHandMiddle2
+    400170: RightHandRing1
+    400172: RightHandRing2
+    400174: RightHandThumb1
+    400176: RightHandThumb2
+    400178: Bip01 LeftHandIndex1
+    400180: Bip01 LeftHandIndex2
+    400182: Bip01 LeftHandMiddle1
+    400184: Bip01 LeftHandMiddle2
+    400186: Bip01 LeftHandRing1
+    400188: Bip01 LeftHandRing2
+    400190: Bip01 LeftHandThumb1
+    400192: Bip01 LeftHandThumb2
+    400194: Bip01 RightHandIndex1
+    400196: Bip01 RightHandIndex2
+    400198: Bip01 RightHandMiddle1
+    400200: Bip01 RightHandMiddle2
+    400202: Bip01 RightHandRing1
+    400204: Bip01 RightHandRing2
+    400206: Bip01 RightHandThumb1
+    400208: Bip01 RightHandThumb2
+    400210: Bip01 Ponytail2
+    400212: Bip01 Ponytail21
+    400214: Bip01 Ponytail22
+    400216: Bip01 Xtra01_Skirt_B_L
+    400218: Bip01 Xtra01_Skirt_B_R
+    400220: D04_HDBLW 1
+    400222: D04_LEYE
+    400224: D04_REYE
+    400226: Bip01 Footsteps
+    400228: Bip01 HeadNub
+    400230: Bip01 L Finger0Nub
+    400232: Bip01 L Finger1Nub
+    400234: Bip01 L Finger2Nub
+    400236: Bip01 L Finger3Nub
+    400238: Bip01 L Toe0Nub
+    400240: Bip01 Ponytail1Nub
+    400242: Bip01 Ponytail2Nub
+    400244: Bip01 R Finger0Nub
+    400246: Bip01 R Finger1Nub
+    400248: Bip01 R Finger2Nub
+    400250: Bip01 R Finger3Nub
+    400252: Bip01 R Toe0Nub
+    400254: Bip01 Xtra01_Skirt_B_L02
+    400256: Bip01 Xtra01_Skirt_B_L03
+    400258: Bip01 Xtra01_Skirt_B_LNub
+    400260: Bip01 Xtra01_Skirt_B_R02
+    400262: Bip01 Xtra01_Skirt_B_R03
+    400264: Bip01 Xtra01_Skirt_B_RNub
+    400266: Bip01 Xtra01_Skirt_F_L02
+    400268: Bip01 Xtra01_Skirt_F_L03
+    400270: Bip01 Xtra01_Skirt_F_LNub
+    400272: Bip01 Xtra01_Skirt_F_R02
+    400274: Bip01 Xtra01_Skirt_F_R03
+    400276: Bip01 Xtra01_Skirt_F_RNub
+    400278: Bip01 Xtra01_Skirt_S_L02
+    400280: Bip01 Xtra01_Skirt_S_L03
+    400282: Bip01 Xtra01_Skirt_S_LNub
+    400284: Bip01 Xtra01_Skirt_S_R02
+    400286: Bip01 Xtra01_Skirt_S_R03
+    400288: Bip01 Xtra01_Skirt_S_RNub
+    400290: Bone002_Left_Eye
+    400292: Bone002_Righ Eye
+    400294: CLUB_DUMMY
+    400296: CLUB_M01PD
+    400298: CLUB_M01PI
+    400300: CLUB_M01PK
+    400302: CLUB_M01PP
+    400304: CLUB_M02PD
+    400306: CLUB_M02PI
+    400308: CLUB_M02PK
+    400310: CLUB_M02PP
+    400312: CLUB_M03PD
+    400314: CLUB_M03PI
+    400316: CLUB_M03PK
+    400318: CLUB_M03PP
+    400320: CLUB_M04PD
+    400322: CLUB_M04PI
+    400324: CLUB_M04PK
+    400326: CLUB_M04PP
+    400328: CLUB_M05PD
+    400330: CLUB_M05PI
+    400332: CLUB_M05PK
+    400334: CLUB_M05PP
+    400336: CLUB_M06PD
+    400338: CLUB_M06PI
+    400340: CLUB_M06PK
+    400342: CLUB_M06PP
+    400344: CLUB_M07PD
+    400346: CLUB_M07PI
+    400348: CLUB_M07PK
+    400350: CLUB_M07PP
+    400352: CLUB_M08PD
+    400354: CLUB_M08PI
+    400356: CLUB_M08PK
+    400358: CLUB_M08PP
+    400360: CLUB_M09PD
+    400362: CLUB_M09PI
+    400364: CLUB_M09PK
+    400366: CLUB_M09PP
+    400368: CLUB_M10PD
+    400370: CLUB_M10PI
+    400372: CLUB_M10PK
+    400374: CLUB_M10PP
+    400376: CLUB_M11PD
+    400378: CLUB_M11PI
+    400380: CLUB_M11PK
+    400382: CLUB_M11PP
+    400384: CLUB_M14PD
+    400386: CLUB_M14PI
+    400388: CLUB_M14PK
+    400390: CLUB_M14PP
+    400392: CLUB_M15PD
+    400394: CLUB_M15PI
+    400396: CLUB_M15PK
+    400398: CLUB_M15PP
+    400400: CLUB_M16PD
+    400402: CLUB_M16PI
+    400404: CLUB_M16PK
+    400406: CLUB_M16PP
+    400408: CLUB_M50PD
+    400410: CLUB_M50PI
+    400412: CLUB_M50PK
+    400414: CLUB_M50PP
+    400416: D04_HDBLW001
+    400418: D04_HDBLW002
+    400420: D04_HDBLW003
+    400422: D04_HDBLW004
+    400424: D04_HDBLW005
+    400426: D04_HDEYE001
+    400428: D04_HDEYE002
+    400430: D04_HDEYE003
+    400432: D04_HDEYE004
+    400434: D04_HDEYE005
+    400436: D04_HDMTH001
+    400438: D04_HDMTH002
+    400440: D04_HDMTH003
+    400442: D04_HDMTH004
+    400444: D04_HDMTH005
+    400446: D04_HDMTH006
+    400448: D04_HDMTH007
+    400450: D04_HDMTH008
+    400452: D04_HDMTH009
+    400454: D04_LEYE001
+    400456: D04_LEYE002
+    400458: D04_LEYE003
+    400460: D04_LEYE004
+    400462: D04_LEYE005
+    400464: D04_REYE001
+    400466: D04_REYE002
+    400468: D04_REYE003
+    400470: D04_REYE004
+    400472: D04_REYE005
+    400474: D04BACK_Dummy
+    400476: D04CAP_Dummy
+    400478: D04GLASS_Dummy
+    400480: D04M01BODY
+    400482: D04M01HAIR
+    400484: D04M02BACK
+    400486: D04M02CAP_HAIR01
+    400488: D04M02GLASS
+    400490: D04M03BACK
+    400492: D04M03CAP_HAIR01
+    400494: D04M03GLASS
+    400496: D04M05CAP_HAIR01
+    400498: D04M05GLASS
+    400500: D04M07BACK
+    400502: D04M07CAP_HAIR91
+    400504: D04M07GLASS
+    400506: D04M08CAP_HAIR01
+    400508: D04M09BACK
+    400510: D04M09CAP_HAIR90
+    400512: D04M09GLASS
+    400514: D04M10BACK
+    400516: D04M10CAP_HAIR01
+    400518: D04M10GLASS
+    400520: D04M11GLASS
+    400522: D04M11HAIR
+    400524: D04M14BACK
+    400526: D04M14GLASS
+    400528: D04M14HAIR
+    400530: D04M15CAP_HAIR01
+    400532: D04M16BACK
+    400534: D04M16CAP_HAIR91
+    400536: D04M17BACK
+    400538: D04M17CAP_HAIR90
+    400540: D04M17GLASS
+    400542: D04M90BACK
+    400544: D04M90HAIR
+    400546: D04M91HAIR
+    400548: ExposeTransform001
+    400550: Eye Both_Handler
+    400552: Left Eye_Handler
+    400554: Point002
+    400556: Point003 1
+    400558: Point004
+    400560: Point004 1
+    400562: Point005
+    400564: Point007
+    400566: Point008
+    400568: Right Eye_Handler
+    400570: Bone001_Left_Breast
+    400572: Bone001_Righ_Breast
+    400574: Breast Handler
+    400576: Bip01 Xtra04_SKIRT
+    400578: Bone001_BACK
+    400580: Bip01 Xtra05_SLHAIR
+    400582: Bip01 Xtra05_SLHAIR02
+    400584: Bip01 Xtra05_SLHAIROpp
+    400586: Bip01 Xtra05_SLHAIROpp02
+    400588: D04_BLUSHE
+    400590: Bip01 Prop1
+    2300000: D04_BLUSHER
+    2300002: D04_HDBACK
+    2300004: D04_L_EYE
+    2300006: D04_R_EYE
+    2300008: D04_HDBLW
+    2300010: D04_HDBLW 1
+    2300012: D04_HDEYE
+    2300014: D04_HDMTH
+    2300016: D04_LEYE
+    2300018: D04_REYE
+    2300020: Circle001
+    2300022: CLUB_M01PD
+    2300024: CLUB_M01PI
+    2300026: CLUB_M01PK
+    2300028: CLUB_M01PP
+    2300030: CLUB_M02PD
+    2300032: CLUB_M02PI
+    2300034: CLUB_M02PK
+    2300036: CLUB_M02PP
+    2300038: CLUB_M03PD
+    2300040: CLUB_M03PI
+    2300042: CLUB_M03PK
+    2300044: CLUB_M03PP
+    2300046: CLUB_M04PD
+    2300048: CLUB_M04PI
+    2300050: CLUB_M04PK
+    2300052: CLUB_M04PP
+    2300054: CLUB_M05PD
+    2300056: CLUB_M05PI
+    2300058: CLUB_M05PK
+    2300060: CLUB_M05PP
+    2300062: CLUB_M06PD
+    2300064: CLUB_M06PI
+    2300066: CLUB_M06PK
+    2300068: CLUB_M06PP
+    2300070: CLUB_M07PD
+    2300072: CLUB_M07PI
+    2300074: CLUB_M07PK
+    2300076: CLUB_M07PP
+    2300078: CLUB_M08PD
+    2300080: CLUB_M08PI
+    2300082: CLUB_M08PK
+    2300084: CLUB_M08PP
+    2300086: CLUB_M09PD
+    2300088: CLUB_M09PI
+    2300090: CLUB_M09PK
+    2300092: CLUB_M09PP
+    2300094: CLUB_M10PD
+    2300096: CLUB_M10PI
+    2300098: CLUB_M10PK
+    2300100: CLUB_M10PP
+    2300102: CLUB_M11PD
+    2300104: CLUB_M11PI
+    2300106: CLUB_M11PK
+    2300108: CLUB_M11PP
+    2300110: CLUB_M14PD
+    2300112: CLUB_M14PI
+    2300114: CLUB_M14PK
+    2300116: CLUB_M14PP
+    2300118: CLUB_M15PD
+    2300120: CLUB_M15PI
+    2300122: CLUB_M15PK
+    2300124: CLUB_M15PP
+    2300126: CLUB_M16PD
+    2300128: CLUB_M16PI
+    2300130: CLUB_M16PK
+    2300132: CLUB_M16PP
+    2300134: CLUB_M50PD
+    2300136: CLUB_M50PI
+    2300138: CLUB_M50PK
+    2300140: CLUB_M50PP
+    2300142: D04_HDBLW001
+    2300144: D04_HDBLW002
+    2300146: D04_HDBLW003
+    2300148: D04_HDBLW004
+    2300150: D04_HDBLW005
+    2300152: D04_HDEYE001
+    2300154: D04_HDEYE002
+    2300156: D04_HDEYE003
+    2300158: D04_HDEYE004
+    2300160: D04_HDEYE005
+    2300162: D04_HDMTH001
+    2300164: D04_HDMTH002
+    2300166: D04_HDMTH003
+    2300168: D04_HDMTH004
+    2300170: D04_HDMTH005
+    2300172: D04_HDMTH006
+    2300174: D04_HDMTH007
+    2300176: D04_HDMTH008
+    2300178: D04_HDMTH009
+    2300180: D04_LEYE001
+    2300182: D04_LEYE002
+    2300184: D04_LEYE003
+    2300186: D04_LEYE004
+    2300188: D04_LEYE005
+    2300190: D04_REYE001
+    2300192: D04_REYE002
+    2300194: D04_REYE003
+    2300196: D04_REYE004
+    2300198: D04_REYE005
+    2300200: D04M02BACK
+    2300202: D04M02CAP_HAIR01
+    2300204: D04M02GLASS
+    2300206: D04M03BACK
+    2300208: D04M03CAP_HAIR01
+    2300210: D04M03GLASS
+    2300212: D04M05CAP_HAIR01
+    2300214: D04M05GLASS
+    2300216: D04M07BACK
+    2300218: D04M07CAP_HAIR91
+    2300220: D04M07GLASS
+    2300222: D04M08CAP_HAIR01
+    2300224: D04M09BACK
+    2300226: D04M09CAP_HAIR90
+    2300228: D04M09GLASS
+    2300230: D04M10BACK
+    2300232: D04M10CAP_HAIR01
+    2300234: D04M10GLASS
+    2300236: D04M11GLASS
+    2300238: D04M14BACK
+    2300240: D04M14GLASS
+    2300242: D04M14HAIR
+    2300244: D04M15CAP_HAIR01
+    2300246: D04M16BACK
+    2300248: D04M16CAP_HAIR91
+    2300250: D04M17BACK
+    2300252: D04M17CAP_HAIR90
+    2300254: D04M17GLASS
+    2300256: D04M90BACK
+    2300258: D04_BLUSHE
+    2300260: D04BASE
+    3300000: D04_BLUSHER
+    3300002: D04_HDBACK
+    3300004: D04_L_EYE
+    3300006: D04_R_EYE
+    3300008: D04_HDBLW
+    3300010: D04_HDBLW 1
+    3300012: D04_HDEYE
+    3300014: D04_HDMTH
+    3300016: D04_LEYE
+    3300018: D04_REYE
+    3300020: Circle001
+    3300022: CLUB_M01PD
+    3300024: CLUB_M01PI
+    3300026: CLUB_M01PK
+    3300028: CLUB_M01PP
+    3300030: CLUB_M02PD
+    3300032: CLUB_M02PI
+    3300034: CLUB_M02PK
+    3300036: CLUB_M02PP
+    3300038: CLUB_M03PD
+    3300040: CLUB_M03PI
+    3300042: CLUB_M03PK
+    3300044: CLUB_M03PP
+    3300046: CLUB_M04PD
+    3300048: CLUB_M04PI
+    3300050: CLUB_M04PK
+    3300052: CLUB_M04PP
+    3300054: CLUB_M05PD
+    3300056: CLUB_M05PI
+    3300058: CLUB_M05PK
+    3300060: CLUB_M05PP
+    3300062: CLUB_M06PD
+    3300064: CLUB_M06PI
+    3300066: CLUB_M06PK
+    3300068: CLUB_M06PP
+    3300070: CLUB_M07PD
+    3300072: CLUB_M07PI
+    3300074: CLUB_M07PK
+    3300076: CLUB_M07PP
+    3300078: CLUB_M08PD
+    3300080: CLUB_M08PI
+    3300082: CLUB_M08PK
+    3300084: CLUB_M08PP
+    3300086: CLUB_M09PD
+    3300088: CLUB_M09PI
+    3300090: CLUB_M09PK
+    3300092: CLUB_M09PP
+    3300094: CLUB_M10PD
+    3300096: CLUB_M10PI
+    3300098: CLUB_M10PK
+    3300100: CLUB_M10PP
+    3300102: CLUB_M11PD
+    3300104: CLUB_M11PI
+    3300106: CLUB_M11PK
+    3300108: CLUB_M11PP
+    3300110: CLUB_M14PD
+    3300112: CLUB_M14PI
+    3300114: CLUB_M14PK
+    3300116: CLUB_M14PP
+    3300118: CLUB_M15PD
+    3300120: CLUB_M15PI
+    3300122: CLUB_M15PK
+    3300124: CLUB_M15PP
+    3300126: CLUB_M16PD
+    3300128: CLUB_M16PI
+    3300130: CLUB_M16PK
+    3300132: CLUB_M16PP
+    3300134: CLUB_M50PD
+    3300136: CLUB_M50PI
+    3300138: CLUB_M50PK
+    3300140: CLUB_M50PP
+    3300142: D04_HDBLW001
+    3300144: D04_HDBLW002
+    3300146: D04_HDBLW003
+    3300148: D04_HDBLW004
+    3300150: D04_HDBLW005
+    3300152: D04_HDEYE001
+    3300154: D04_HDEYE002
+    3300156: D04_HDEYE003
+    3300158: D04_HDEYE004
+    3300160: D04_HDEYE005
+    3300162: D04_HDMTH001
+    3300164: D04_HDMTH002
+    3300166: D04_HDMTH003
+    3300168: D04_HDMTH004
+    3300170: D04_HDMTH005
+    3300172: D04_HDMTH006
+    3300174: D04_HDMTH007
+    3300176: D04_HDMTH008
+    3300178: D04_HDMTH009
+    3300180: D04_LEYE001
+    3300182: D04_LEYE002
+    3300184: D04_LEYE003
+    3300186: D04_LEYE004
+    3300188: D04_LEYE005
+    3300190: D04_REYE001
+    3300192: D04_REYE002
+    3300194: D04_REYE003
+    3300196: D04_REYE004
+    3300198: D04_REYE005
+    3300200: D04M02BACK
+    3300202: D04M02CAP_HAIR01
+    3300204: D04M02GLASS
+    3300206: D04M03BACK
+    3300208: D04M03CAP_HAIR01
+    3300210: D04M03GLASS
+    3300212: D04M05CAP_HAIR01
+    3300214: D04M05GLASS
+    3300216: D04M07BACK
+    3300218: D04M07CAP_HAIR91
+    3300220: D04M07GLASS
+    3300222: D04M08CAP_HAIR01
+    3300224: D04M09BACK
+    3300226: D04M09CAP_HAIR90
+    3300228: D04M09GLASS
+    3300230: D04M10BACK
+    3300232: D04M10CAP_HAIR01
+    3300234: D04M10GLASS
+    3300236: D04M11GLASS
+    3300238: D04M14BACK
+    3300240: D04M14GLASS
+    3300242: D04M14HAIR
+    3300244: D04M15CAP_HAIR01
+    3300246: D04M16BACK
+    3300248: D04M16CAP_HAIR91
+    3300250: D04M17BACK
+    3300252: D04M17CAP_HAIR90
+    3300254: D04M17GLASS
+    3300256: D04M90BACK
+    3300258: D04_BLUSHE
+    3300260: D04BASE
+    4300000: D04_L_EYE
+    4300002: D04_R_EYE
+    4300004: D04_HDEYE
+    4300006: D04_HDBLW
+    4300008: D04_BLUSHER
+    4300010: D04_HDBACK
+    4300012: D04_HDMTH
+    4300014: D04BASE
+    4300016: D04_HDBLW
+    4300018: D04_LEYE
+    4300020: D04_REYE
+    4300022: D04M02BACK
+    4300024: D04M03BACK
+    4300026: D04M07BACK
+    4300028: D04M10BACK
+    4300030: D04M16BACK
+    4300032: D04M90BACK
+    4300034: D04M09BACK
+    4300036: D04M14BACK
+    4300038: D04M17BACK
+    4300040: D04M05GLASS
+    4300042: D04M03GLASS
+    4300044: D04M07GLASS
+    4300046: D04M10GLASS
+    4300048: D04M11GLASS
+    4300050: D04M02GLASS
+    4300052: D04M09GLASS
+    4300054: D04M14GLASS
+    4300056: D04M17GLASS
+    4300058: D04_HDBLW001
+    4300060: D04_HDMTH001
+    4300062: D04_HDEYE001
+    4300064: D04_HDEYE002
+    4300066: D04_HDBLW002
+    4300068: D04_HDBLW003
+    4300070: D04_HDEYE003
+    4300072: D04_HDBLW004
+    4300074: D04_HDBLW005
+    4300076: D04_HDEYE004
+    4300078: D04_LEYE001
+    4300080: D04_REYE001
+    4300082: D04_LEYE002
+    4300084: D04_REYE002
+    4300086: D04_LEYE003
+    4300088: D04_REYE003
+    4300090: D04_LEYE004
+    4300092: D04_REYE004
+    4300094: D04_LEYE005
+    4300096: D04_REYE005
+    4300098: D04_HDEYE005
+    4300100: D04_HDMTH002
+    4300102: D04_HDMTH004
+    4300104: D04_HDMTH007
+    4300106: D04_HDMTH003
+    4300108: D04_HDMTH005
+    4300110: D04_HDMTH006
+    4300112: D04_HDMTH008
+    4300114: D04_HDMTH009
+    4300116: D04M11HAIR
+    4300118: D04M10CAP_HAIR01
+    4300120: D04M07CAP_HAIR91
+    4300122: D04M03CAP_HAIR01
+    4300124: D04M02CAP_HAIR01
+    4300126: D04M15CAP_HAIR01
+    4300128: D04M16CAP_HAIR91
+    4300130: D04M05CAP_HAIR01
+    4300132: D04M08CAP_HAIR01
+    4300134: D04M09CAP_HAIR90
+    4300136: D04M17CAP_HAIR90
+    4300138: D04M14HAIR
+    4300140: D04M90HAIR
+    4300142: D04M91HAIR
+    4300144: Circle001
+    4300146: CLUB_M01PP
+    4300148: CLUB_M01PD
+    4300150: CLUB_M01PI
+    4300152: CLUB_M01PK
+    4300154: CLUB_M05PK
+    4300156: CLUB_M05PP
+    4300158: CLUB_M05PI
+    4300160: CLUB_M04PP
+    4300162: CLUB_M04PI
+    4300164: CLUB_M04PK
+    4300166: CLUB_M04PD
+    4300168: CLUB_M05PD
+    4300170: CLUB_M50PP
+    4300172: CLUB_M50PK
+    4300174: CLUB_M50PI
+    4300176: CLUB_M50PD
+    4300178: CLUB_M06PI
+    4300180: CLUB_M06PK
+    4300182: CLUB_M06PP
+    4300184: CLUB_M06PD
+    4300186: CLUB_M07PD
+    4300188: CLUB_M07PI
+    4300190: CLUB_M07PP
+    4300192: CLUB_M07PK
+    4300194: CLUB_M02PP
+    4300196: CLUB_M02PI
+    4300198: CLUB_M02PK
+    4300200: CLUB_M02PD
+    4300202: CLUB_M03PI
+    4300204: CLUB_M03PK
+    4300206: CLUB_M03PP
+    4300208: CLUB_M03PD
+    4300210: CLUB_M08PI
+    4300212: CLUB_M08PK
+    4300214: CLUB_M08PP
+    4300216: CLUB_M08PD
+    4300218: CLUB_M09PI
+    4300220: CLUB_M09PK
+    4300222: CLUB_M09PP
+    4300224: CLUB_M09PD
+    4300226: CLUB_M10PD
+    4300228: CLUB_M10PK
+    4300230: CLUB_M10PP
+    4300232: CLUB_M10PI
+    4300234: CLUB_M11PP
+    4300236: CLUB_M11PK
+    4300238: CLUB_M11PD
+    4300240: CLUB_M11PI
+    4300242: CLUB_M15PD
+    4300244: CLUB_M15PI
+    4300246: CLUB_M14PD
+    4300248: CLUB_M14PK
+    4300250: CLUB_M14PP
+    4300252: CLUB_M14PI
+    4300254: CLUB_M16PP
+    4300256: CLUB_M15PK
+    4300258: CLUB_M15PP
+    4300260: CLUB_M16PD
+    4300262: CLUB_M16PI
+    4300264: CLUB_M16PK
+    4300266: D04M01HAIR
+    4300268: D04M01BODY
+    4300270: D04_BLUSHE
+    9500000: //RootNode
+    13700000: D04_HDBLW
+    13700002: D04_HDEYE
+    13700004: D04_HDMTH
+    13700006: D04BASE
+    13700008: D04M01BODY
+    13700010: D04M01HAIR
+    13700012: D04M11HAIR
+    13700014: D04M90HAIR
+    13700016: D04M91HAIR
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 5039b46cc9f08424bb5114769f40d5f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D04BLUSHER
+    second: {fileID: 2100000, guid: 61eb4723fa840454496a16043d5482ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D04SKIN
+    second: {fileID: 2100000, guid: 1b07c2665e76431478ab643a805ee173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D04_EYE
+    second: {fileID: 2100000, guid: 23bfa2af993d16443ad1cb8d0f6effe3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Bip01 Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: D04BASE(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01
+      parentName: D04BASE(Clone)
+      position: {x: -2.842171e-16, y: 1.0516869, z: 0.031967998}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Pelvis
+      parentName: Bip01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.5, y: 0.5, z: 0.4999993, w: 0.5000007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 L Thigh
+      parentName: Bip01 Pelvis
+      position: {x: 0.000000076293944, y: 0.00000015974044, z: 0.082619846}
+      rotation: {x: 0.02845597, y: 0.9995314, z: -0.0076533398, w: -0.008284645}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Bip01 L Calf
+      parentName: Bip01 L Thigh
+      position: {x: -0.4102236, y: 0, z: 0}
+      rotation: {x: 0.0000000011796049, y: -9.116726e-10, z: 0.016766848, w: 0.99985945}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: Bip01 L Foot
+      parentName: Bip01 L Calf
+      position: {x: -0.52436125, y: 0.0000000047683715, z: -0.0000000047683715}
+      rotation: {x: -0.007790448, y: -0.0081545, z: -0.045210935, w: 0.9989138}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Bip01 L Toe0
+      parentName: Bip01 L Foot
+      position: {x: -0.1195944, y: 0.12453997, z: 0}
+      rotation: {x: -1.0774657e-11, y: 1.0774657e-11, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 R Thigh
+      parentName: Bip01 Pelvis
+      position: {x: -0.000000076293944, y: -0.000000069141386, z: -0.082619846}
+      rotation: {x: 0.02845647, y: 0.99953145, z: 0.0076514124, w: 0.008283172}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 R Calf
+      parentName: Bip01 R Thigh
+      position: {x: -0.41022354, y: 0.0000000023841857, z: -0.000000009536743}
+      rotation: {x: -1.320143e-10, y: 9.2923974e-10, z: 0.016766837, w: 0.99985945}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Bip01 R Foot
+      parentName: Bip01 R Calf
+      position: {x: -0.52436125, y: 0.000000009536743, z: 0}
+      rotation: {x: 0.0077899434, y: 0.008154377, z: -0.045211438, w: 0.9989138}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Bip01 R Toe0
+      parentName: Bip01 R Foot
+      position: {x: -0.1195944, y: 0.12453997, z: 0}
+      rotation: {x: -1.4483925e-10, y: 1.2575136e-11, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Spine1
+      parentName: Bip01 Pelvis
+      position: {x: -0.11996658, y: -0.00011306286, z: 0.00000016200195}
+      rotation: {x: 0.00001791894, y: 0.0000007251146, z: -0.0015326728, w: 0.99999887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Spine2
+      parentName: Bip01 Spine1
+      position: {x: -0.14202233, y: -0.0001924944, z: -5.340553e-10}
+      rotation: {x: 2.5926832e-12, y: -0.00000022659874, z: 0.08169856, w: 0.99665713}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip01 L Clavicle
+      parentName: Bip01 Spine2
+      position: {x: -0.20375244, y: -0.024285201, z: 0.033511102}
+      rotation: {x: -0.7071067, y: -0.00028245646, z: 0.70710677, w: -0.00028049524}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 L UpperArm
+      parentName: Bip01 L Clavicle
+      position: {x: -0.08352521, y: 0, z: 0}
+      rotation: {x: 0.040281378, y: -0.014308365, z: 0.0002260822, w: 0.9990859}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1}
+    - name: Bip01 L Forearm
+      parentName: Bip01 L UpperArm
+      position: {x: -0.2514283, y: 0, z: 0}
+      rotation: {x: -0.0007385945, y: 0.008208152, z: 0.03778454, w: 0.99925196}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Bip01 L Hand
+      parentName: Bip01 L Forearm
+      position: {x: -0.24000672, y: -0.000000038146972, z: 0}
+      rotation: {x: -0.7052108, y: -0.05599496, z: -0.047746997, w: 0.7051684}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 LeftHandIndex1
+      parentName: Bip01 L Hand
+      position: {x: -0.09194527, y: -0.0051795198, z: -0.02099201}
+      rotation: {x: -0.028641067, y: -0.0036152923, z: -0.033531263, w: 0.99902064}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1}
+    - name: Bip01 LeftHandIndex2
+      parentName: Bip01 LeftHandIndex1
+      position: {x: -0.037448958, y: 0.000000038146972, z: 0}
+      rotation: {x: -0.0000000010876953, y: 0.000000014977683, z: -0.051837962, w: 0.99865556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 LeftHandMiddle1
+      parentName: Bip01 L Hand
+      position: {x: -0.096447825, y: -0.009384536, z: -0.0024935913}
+      rotation: {x: -0.04718108, y: 0.008192808, z: -0.029233988, w: 0.9984249}
+      scale: {x: 1.0000002, y: 0.9999995, z: 1.0000002}
+    - name: Bip01 LeftHandMiddle2
+      parentName: Bip01 LeftHandMiddle1
+      position: {x: -0.042791214, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: -0.021316992, w: 0.9997728}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 LeftHandRing1
+      parentName: Bip01 L Hand
+      position: {x: -0.09347488, y: -0.0068406677, z: 0.014619942}
+      rotation: {x: -0.09350267, y: 0.02473654, z: -0.021208052, w: 0.9950858}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999996}
+    - name: Bip01 LeftHandRing2
+      parentName: Bip01 LeftHandRing1
+      position: {x: -0.038322676, y: -0.000000038146972, z: 0}
+      rotation: {x: 0.0000000036546928, y: -0.000000007604019, z: -0.040293995, w: 0.9991879}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Bip01 LeftHandThumb1
+      parentName: Bip01 L Hand
+      position: {x: -0.04583107, y: 0.011713181, z: -0.037137717}
+      rotation: {x: 0.69031125, y: -0.2309259, z: 0.22926542, w: 0.64620507}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: Bip01 LeftHandThumb2
+      parentName: Bip01 LeftHandThumb1
+      position: {x: -0.03885765, y: 0, z: 0}
+      rotation: {x: -0.000000004051547, y: -0.000000014815781, z: -0.02195497, w: 0.99975896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Prop2
+      parentName: Bip01 L Hand
+      position: {x: -0.014172287, y: 0.017382964, z: 0.037996557}
+      rotation: {x: 0.019472117, y: 0.9198452, z: -0.0703702, w: -0.38542673}
+      scale: {x: 0.9999998, y: 1, z: 0.9999998}
+    - name: CLUB_EFFC_DUMMY
+      parentName: Bip01 Prop2
+      position: {x: 0.00000015258789, y: -0.000000038146972, z: 1.0398113}
+      rotation: {x: -0.000000033527616, y: -1.2490012e-15, z: 0.00000003725291, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Bip01 Neck
+      parentName: Bip01 Spine2
+      position: {x: -0.2599881, y: -0.019391479, z: 0.000000007993804}
+      rotation: {x: -1.3505886e-12, y: 0.0000005534924, z: -0.19955768, w: 0.97988605}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip01 Head
+      parentName: Bip01 Neck
+      position: {x: -0.062087707, y: -0.0050466536, z: -0.000000007629569}
+      rotation: {x: -0.000019412946, y: -0.000004806552, z: -0.0016354719, w: 0.9999987}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip01 Ponytail1
+      parentName: Bip01 Head
+      position: {x: -0.20660599, y: -0.18694252, z: -0.000000888723}
+      rotation: {x: -1.9168113e-12, y: -0.0000027456554, z: 0.98992455, w: 0.1415958}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bip01 Ponytail11
+      parentName: Bip01 Ponytail1
+      position: {x: -0.18946335, y: -0.00015808105, z: -4.384492e-10}
+      rotation: {x: -2.9488056e-14, y: -0.00000062841474, z: 0.22657005, w: 0.9739949}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Ponytail12
+      parentName: Bip01 Ponytail11
+      position: {x: -0.22140029, y: -0.00013092041, z: -3.6292475e-10}
+      rotation: {x: 1.4163144e-14, y: -0.00000020411342, z: 0.07359151, w: 0.99728847}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip01 Ponytail13
+      parentName: Bip01 Ponytail12
+      position: {x: -0.16623184, y: -0.00015456199, z: -4.285539e-10}
+      rotation: {x: 1.1737979e-13, y: 0.00000010537004, z: -0.03799035, w: 0.9992781}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip01 Ponytail2
+      parentName: Bip01 Head
+      position: {x: -0.018636933, y: -0.07951927, z: 0.0018559092}
+      rotation: {x: -0.00205522, y: 0.001435281, z: 0.9992085, w: -0.039699443}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bip01 Ponytail21
+      parentName: Bip01 Ponytail2
+      position: {x: -0.15224242, y: -0.00015640259, z: -0.00000047087667}
+      rotation: {x: 0.0014271761, y: 0.0020625954, z: 0.03532023, w: 0.9993729}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Ponytail22
+      parentName: Bip01 Ponytail21
+      position: {x: -0.19696075, y: -0.00018213272, z: -0.00000054955484}
+      rotation: {x: 0.0014271756, y: 0.002062594, z: 0.03532022, w: 0.9993729}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Bip01 Xtra05_SLHAIR
+      parentName: Bip01 Head
+      position: {x: -0.06596344, y: 0.041611023, z: 0.09458536}
+      rotation: {x: -0.15139432, y: 0.9872706, z: -0.028155742, w: -0.039797354}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: Bip01 Xtra05_SLHAIR02
+      parentName: Bip01 Xtra05_SLHAIR
+      position: {x: -0.051312104, y: -0.000061006544, z: 0.0000017738342}
+      rotation: {x: -0.0071720313, y: 0.06500893, z: -0.10863364, w: 0.991928}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Bip01 Xtra05_SLHAIROpp
+      parentName: Bip01 Head
+      position: {x: -0.06596344, y: 0.041611556, z: -0.09458514}
+      rotation: {x: -0.15139432, y: 0.9872704, z: 0.028161302, w: 0.03979738}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: Bip01 Xtra05_SLHAIROpp02
+      parentName: Bip01 Xtra05_SLHAIROpp
+      position: {x: -0.051312104, y: -0.000061006544, z: -0.0000017642974}
+      rotation: {x: 0.0071720215, y: -0.06500833, z: -0.10863399, w: 0.991928}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Bone001_Left_Eye
+      parentName: Bip01 Head
+      position: {x: -0.08727279, y: 0.036725845, z: 0.038527526}
+      rotation: {x: 0.7880801, y: -0.6155727, z: -0.0000013486404, w: -0.00000092624424}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: D04_LEYE
+      parentName: Bone001_Left_Eye
+      position: {x: -0.024741573, y: 0.0075502014, z: -0.0042899107}
+      rotation: {x: -0.4999999, y: -0.50000006, z: -0.49999937, w: 0.50000066}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999998}
+    - name: Bone001_Righ Eye
+      parentName: Bip01 Head
+      position: {x: -0.08727279, y: 0.03672596, z: -0.038523406}
+      rotation: {x: 0.6155727, y: 0.7880801, z: 0.00000001862831, w: -0.000000010772735}
+      scale: {x: -1, y: -0.99999994, z: -1.0000001}
+    - name: D04_REYE
+      parentName: Bone001_Righ Eye
+      position: {x: -0.024741793, y: 0.0075500486, z: -0.00428988}
+      rotation: {x: 0.4961224, y: -0.5038475, z: 0.49612138, w: 0.5038491}
+      scale: {x: -0.99999994, y: -1, z: -1.0000001}
+    - name: D04_BLUSHE
+      parentName: Bip01 Head
+      position: {x: 1.5757307, y: 0.4124816, z: 0.0000031090906}
+      rotation: {x: -0.7018265, y: -0.08625411, z: 0.7018265, w: -0.086252205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D04_HDBACK
+      parentName: Bip01 Head
+      position: {x: 1.5757307, y: 0.4124816, z: 0.0000031090906}
+      rotation: {x: -0.7018265, y: -0.08625411, z: 0.7018265, w: -0.086252205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D04_HDBLW
+      parentName: Bip01 Head
+      position: {x: 1.5757307, y: 0.4124816, z: 0.0000031090906}
+      rotation: {x: -0.7018265, y: -0.08625411, z: 0.7018265, w: -0.086252205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D04_HDEYE
+      parentName: Bip01 Head
+      position: {x: 1.5757307, y: 0.4124816, z: 0.0000031090906}
+      rotation: {x: -0.7018265, y: -0.08625411, z: 0.7018265, w: -0.086252205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D04_HDMTH
+      parentName: Bip01 Head
+      position: {x: 1.5757307, y: 0.4124816, z: 0.0000031090906}
+      rotation: {x: -0.7018265, y: -0.08625411, z: 0.7018265, w: -0.086252205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 R Clavicle
+      parentName: Bip01 Spine2
+      position: {x: -0.20375244, y: -0.024285011, z: -0.033511236}
+      rotation: {x: 0.7071067, y: 0.00028046023, z: 0.70710677, w: -0.00028242148}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 R UpperArm
+      parentName: Bip01 R Clavicle
+      position: {x: -0.08352519, y: 0, z: 0}
+      rotation: {x: -0.04026793, y: 0.014307694, z: 0.00020554654, w: 0.99908644}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Bip01 R Forearm
+      parentName: Bip01 R UpperArm
+      position: {x: -0.2514283, y: 0.000000009536743, z: 0}
+      rotation: {x: 0.00073855725, y: -0.008208104, z: 0.037785195, w: 0.99925196}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Bip01 R Hand
+      parentName: Bip01 R Forearm
+      position: {x: -0.24000672, y: -0.000000038146972, z: 0}
+      rotation: {x: 0.7052108, y: 0.055994935, z: -0.04774697, w: 0.7051684}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 RightHandIndex1
+      parentName: Bip01 R Hand
+      position: {x: -0.09194511, y: -0.0051795575, z: 0.02099205}
+      rotation: {x: 0.028641008, y: 0.0036152592, z: -0.033530664, w: 0.99902076}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000001}
+    - name: Bip01 RightHandIndex2
+      parentName: Bip01 RightHandIndex1
+      position: {x: -0.037449036, y: 0, z: -0.000000038146972}
+      rotation: {x: 3.0741074e-10, y: 0.000000014905265, z: -0.05183798, w: 0.99865556}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Bip01 RightHandMiddle1
+      parentName: Bip01 R Hand
+      position: {x: -0.09644775, y: -0.009384536, z: 0.0024935913}
+      rotation: {x: 0.04718092, y: -0.008192728, z: -0.029234363, w: 0.9984249}
+      scale: {x: 1.0000004, y: 0.9999996, z: 1.0000004}
+    - name: Bip01 RightHandMiddle2
+      parentName: Bip01 RightHandMiddle1
+      position: {x: -0.042791136, y: 0, z: 0}
+      rotation: {x: -1.4790756e-10, y: 0.000000014907702, z: -0.02131699, w: 0.9997728}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Bip01 RightHandRing1
+      parentName: Bip01 R Hand
+      position: {x: -0.09347473, y: -0.0068406295, z: -0.014619942}
+      rotation: {x: 0.09350274, y: -0.024736462, z: -0.021209287, w: 0.9950857}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.9999996}
+    - name: Bip01 RightHandRing2
+      parentName: Bip01 RightHandRing1
+      position: {x: -0.038322754, y: -0.000000038146972, z: -0.000000038146972}
+      rotation: {x: -0.0000000035477834, y: 1.4307053e-10, z: -0.040293988, w: 0.9991879}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bip01 RightHandThumb1
+      parentName: Bip01 R Hand
+      position: {x: -0.04583107, y: 0.0117131425, z: 0.037137717}
+      rotation: {x: -0.6903114, y: 0.23092924, z: 0.22926082, w: 0.64620537}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Bip01 RightHandThumb2
+      parentName: Bip01 RightHandThumb1
+      position: {x: -0.038857725, y: 0, z: 0.000000038146972}
+      rotation: {x: 0.0000000037243924, y: -8.178875e-11, z: -0.021955, w: 0.99975896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone001_BACK
+      parentName: Bip01 Spine2
+      position: {x: -0.21112259, y: -0.07670547, z: 0.000004425049}
+      rotation: {x: 0.08017041, y: 0.9967812, z: -0.000019749412, w: -0.0000018288223}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Breast Handler
+      parentName: Bip01 Spine2
+      position: {x: -0.09976303, y: -0.0028781127, z: 0.0000009155273}
+      rotation: {x: -0.45829454, y: 0.5384851, z: 0.5384665, w: -0.4583163}
+      scale: {x: 0.71875405, y: 1.0000001, z: 0.99999964}
+    - name: Bone001_Left_Breast
+      parentName: Breast Handler
+      position: {x: -0.066489995, y: 0.08430063, z: -0.0037825012}
+      rotation: {x: 0.7070216, y: -0.00022313731, z: -0.0077945087, w: 0.70714897}
+      scale: {x: 1.3912966, y: 0.9999999, z: 1.0000001}
+    - name: Bone001_Righ_Breast
+      parentName: Breast Handler
+      position: {x: -0.066490024, y: -0.08429974, z: -0.0037825012}
+      rotation: {x: 0.7071489, y: 0.0077948454, z: 0.00023641363, w: 0.70702165}
+      scale: {x: 1.3912967, y: 0.99999994, z: 1.0000002}
+    - name: Bip01 Xtra01_Skirt_B_L
+      parentName: Bip01 Pelvis
+      position: {x: -0.07974587, y: -0.1164521, z: 0.060321033}
+      rotation: {x: -0.050153956, y: 0.07515098, z: 0.980462, w: 0.17473173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Xtra01_Skirt_B_R
+      parentName: Bip01 Pelvis
+      position: {x: -0.079746015, y: -0.11645227, z: -0.060320497}
+      rotation: {x: 0.05015456, y: -0.07515209, z: 0.98046184, w: 0.17473204}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 Xtra01_Skirt_F_L
+      parentName: Bip01 Pelvis
+      position: {x: -0.05388954, y: 0.09561308, z: 0.068164}
+      rotation: {x: -0.13418138, y: 0.9867281, z: 0.06486287, w: 0.06446593}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Xtra01_Skirt_F_R
+      parentName: Bip01 Pelvis
+      position: {x: -0.053889617, y: 0.09561288, z: -0.06816412}
+      rotation: {x: -0.13418108, y: 0.9867281, z: -0.06486107, w: -0.064468674}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Bip01 Xtra01_Skirt_S_L
+      parentName: Bip01 Pelvis
+      position: {x: -0.07156662, y: -0.00023104191, z: 0.14947452}
+      rotation: {x: -0.13822296, y: 0.6867873, z: 0.6934535, w: 0.16834465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Xtra01_Skirt_S_R
+      parentName: Bip01 Pelvis
+      position: {x: -0.07156707, y: -0.00023145675, z: -0.14947432}
+      rotation: {x: 0.13822323, y: -0.686788, z: 0.69345236, w: 0.16834617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Xtra04_SKIRT
+      parentName: Bip01 Pelvis
+      position: {x: -0.09106529, y: 0.00036311627, z: 0.00000012578573}
+      rotation: {x: 0.00000069257146, y: -0.0000006931238, z: 0.99999994, w: 0.00039831598}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: D04BASE
+      parentName: D04BASE(Clone)
+      position: {x: -0, y: 0, z: 0.000000047837997}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.029, y: 1.029, z: 1.029}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
