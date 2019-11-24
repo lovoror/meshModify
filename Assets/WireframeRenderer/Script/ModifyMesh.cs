@@ -35,7 +35,8 @@ public class ModifyMesh : MonoBehaviour{
         if(deleteScript)
             tm.gameObject.AddComponent<MeshCollider>();
     }
-     void DeleteSquare(Transform tm,int index1, int index2)
+
+    void DeleteSquare(Transform tm,int index1, int index2)
     {
         bool deleteScript = false;
         if(tm.gameObject.GetComponent<MeshCollider>() != null)

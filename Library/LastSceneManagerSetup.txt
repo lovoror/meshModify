@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WireframeRenderer/TestScene/test.unity
+- path: Assets/Test/Test.unity
   isLoaded: 1
   isActive: 1
