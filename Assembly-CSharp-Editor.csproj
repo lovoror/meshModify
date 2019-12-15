@@ -61,6 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Boing Kit\Editor\BoingKitStandardShaderGUI.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\BoingBehaviorEditor.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\BoingBonesEditor.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\BoingEditorBase.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\BoingReactorEditor.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\BoingReactorFieldEditor.cs" />
+    <Compile Include="Assets\Boing Kit\Script\Editor\SharedBoingParamsEditor.cs" />
     <Compile Include="Assets\Klak\Math\Editor\InterpolatorConfigDrawer.cs" />
     <Compile Include="Assets\Klak\Motion\Editor\BrownianMotionEditor.cs" />
     <Compile Include="Assets\Klak\Motion\Editor\ConstantMotionEditor.cs" />
@@ -96,6 +103,7 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
+    <Compile Include="Assets\SkinnedVertexModifier\Editor\HandleLabelEditor.cs" />
     <Compile Include="Assets\SkinnedVertexModifier\Editor\MeshEditor.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Test/Test.unity
+- path: Assets/AnimeGirlAnimations_free/Scene/AGANFree_sample.unity
   isLoaded: 1
   isActive: 1

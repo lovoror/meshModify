@@ -7,7 +7,7 @@ using System.Linq;
 public class ModifySkinnedMesh : MonoBehaviour
 {
     public SkinnedMeshRenderer meshRenderer;
-    public Transform owner;
+    
     public Mesh mesh;
     Vector3 hitPos;
 
@@ -15,6 +15,7 @@ public class ModifySkinnedMesh : MonoBehaviour
     Vector3 verPos1;
     Vector3 verPos2;
     Vector3 verPos3;
+
     void Start()
     {
         mesh = (Mesh)Instantiate(meshRenderer.sharedMesh);
@@ -31,16 +32,16 @@ public class ModifySkinnedMesh : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 1000))
             {
-                Debug.Log(hit.point);
+               
                 hitPos = hit.point;
                 int index = HitTestMesh(mesh, hitPos);
                 if(index > -1)
                 {
-                    //StartDeleteQuadPoint(index);
-                    ConvertMesh(mesh);
+                    StartDeleteQuadPoint(index);
+                    //ConvertMesh(mesh);
                 }
-                    
-                
+                verArray = new Vector3[mesh.vertexCount];
+
             }
             Debug.DrawRay(ray.origin, ray.direction *10, Color.green);
 
@@ -246,7 +247,6 @@ public class ModifySkinnedMesh : MonoBehaviour
         // Finishing up.
         mesh.UploadMeshData(true);
 
-        
         return mesh;
     }
 
@@ -342,12 +342,13 @@ public class ModifySkinnedMesh : MonoBehaviour
 
     void StartDeleteQuadPoint(int HitIndex)
     {
-        int[] triangles = mesh.triangles;
-        //Vector3[] vertices = mesh.vertices;
         
-        Vector3 p0 = verArray[HitIndex];
-        Vector3 p1 = verArray[HitIndex+1];
-        Vector3 p2 = verArray[HitIndex+2];
+        //Vector3[] vertices = mesh.vertices;
+        var inIndices = mesh.GetIndices(0);
+
+        Vector3 p0 = verArray[inIndices[HitIndex]];
+        Vector3 p1 = verArray[inIndices[HitIndex + 1]];
+        Vector3 p2 = verArray[inIndices[HitIndex + 2]];
 
         float edge1 = Vector3.Distance(p0, p1);
         float edge2 = Vector3.Distance(p0, p2);
@@ -372,54 +373,14 @@ public class ModifySkinnedMesh : MonoBehaviour
             sharedPoint2 = p2;
         }
 
-        //int index1 = FindVertexIndex(mesh, sharedPoint1);
-        //int index2 = FindVertexIndex(mesh, sharedPoint2);
-        int triIdx = FindTriangleIndex2(p0, p1, mesh);
-        int nextTriangle = FindTriangleIndex(sharedPoint1, sharedPoint2, mesh, triIdx);
-        if(triIdx != -1)
-            DeleteQuad(triIdx, nextTriangle);
+
+        int triIdx = FindTriangleIndex(p0, p1, p2, mesh, verArray);
+        int nextTriangle = FindTriangleIndex2(sharedPoint1, sharedPoint2, mesh, verArray, triIdx);
+        
+       
+         DeleteQuad(triIdx, nextTriangle);
     }
-    void StartDeleteQuad(int HitIndex)
-    {
-
-        int[] triangles = mesh.triangles;
-        Vector3[] vertices = mesh.vertices;
-
-
-        Vector3 p0 = vertices[triangles[HitIndex * 3 + 0]];
-        Vector3 p1 = vertices[triangles[HitIndex * 3 + 1]];
-        Vector3 p2 = vertices[triangles[HitIndex * 3 + 2]];
-
-        float edge1 = Vector3.Distance(p0, p1);
-        float edge2 = Vector3.Distance(p0, p2);
-        float edge3 = Vector3.Distance(p1, p2);
-
-        Vector3 sharedPoint1 = Vector3.zero;
-        Vector3 sharedPoint2 = Vector3.zero;
-
-        if (edge1 > edge2 && edge1 > edge3)
-        {
-            sharedPoint1 = p0;
-            sharedPoint2 = p1;
-        }
-        else if (edge2 > edge1 && edge2 > edge3)
-        {
-            sharedPoint1 = p0;
-            sharedPoint2 = p2;
-        }
-        else
-        {
-            sharedPoint1 = p1;
-            sharedPoint2 = p2;
-        }
-
-        int index1 = FindVertexIndex(mesh, sharedPoint1);
-        int index2 = FindVertexIndex(mesh, sharedPoint2);
-
-        int nextTriangle = FindTriangleIndex(sharedPoint1, sharedPoint2, mesh, HitIndex);
-        DeleteQuad(HitIndex, nextTriangle);
-
-    }
+   
 
     int FindVertexIndex(Mesh mesh, Vector3 vertice)
     {
@@ -434,14 +395,55 @@ public class ModifySkinnedMesh : MonoBehaviour
         return -1;
     }
 
-    int FindTriangleIndex(Vector3 vertice1, Vector3 vertice2, Mesh mesh, int notTriIndex)
+    int FindTriangleIndex(Vector3 vertice1, Vector3 vertice2, Vector3 vertice3, Mesh mesh, Vector3[] verArray)
     {
-        int[] triangles = mesh.triangles;
-        Vector3[] vertices = mesh.vertices;
+        int[] indice = mesh.GetIndices(0);
+        Vector3[] vertices = verArray;
         int i = 0;
         int j = 0;
 
-        while (j < triangles.Length)
+        while (j < indice.Length)
+        {
+           
+            if (vertices[indice[j]] == vertice1 && vertices[indice[j + 1]] == vertice2 && vertices[indice[j + 2]] == vertice3)
+            {
+                return i;
+            }
+            if (vertices[indice[j]] == vertice2 && vertices[indice[j + 1]] == vertice1 && vertices[indice[j + 2]] == vertice3)
+            {
+                return i;
+            }
+            if (vertices[indice[j]] == vertice3 && vertices[indice[j + 1]] == vertice2 && vertices[indice[j + 2]] == vertice1)
+            {
+                return i;
+            }
+            if (vertices[indice[j]] == vertice1 && vertices[indice[j + 1]] == vertice3 && vertices[indice[j + 2]] == vertice2)
+            {
+                return i;
+            }
+            if (vertices[indice[j]] == vertice2 && vertices[indice[j + 1]] == vertice3 && vertices[indice[j + 2]] == vertice1)
+            {
+                return i;
+            }
+            if (vertices[indice[j]] == vertice3 && vertices[indice[j + 1]] == vertice1 && vertices[indice[j + 2]] == vertice2)
+            {
+                return i;
+            }
+
+            i++;
+            j += 3;
+           
+        }
+        return -1;
+    }
+    int FindTriangleIndex2(Vector3 vertice1, Vector3 vertice2, Mesh mesh, Vector3[] verArray, int notTriIndex)
+    {
+        int[] indice = mesh.GetIndices(0);
+        Vector3[] vertices = verArray;
+        int i = 0;
+        int j = 0;
+
+        while (j < indice.Length)
         {
             if (i == notTriIndex)
             {
@@ -449,67 +451,27 @@ public class ModifySkinnedMesh : MonoBehaviour
                 j += 3;
                 continue;
             }
-
-            if (vertices[triangles[j]] == vertice1 && (vertices[triangles[j + 1]] == vertice2 || vertices[triangles[j + 2]] == vertice2))
+            if (vertices[indice[j]] == vertice1 && (vertices[indice[j + 1]] == vertice2 || vertices[indice[j + 2]] == vertice2))
             {
                 return i;
             }
-            else if (vertices[triangles[j]] == vertice2 && (vertices[triangles[j + 1]] == vertice1 || vertices[triangles[j + 2]] == vertice1))
+            else if (vertices[indice[j]] == vertice2 && (vertices[indice[j + 1]] == vertice1 || vertices[indice[j + 2]] == vertice1))
             {
                 return i;
             }
-            else if (vertices[triangles[j + 1]] == vertice2 && (vertices[triangles[j]] == vertice1 || vertices[triangles[j + 2]] == vertice1))
+            else if (vertices[indice[j + 1]] == vertice2 && (vertices[indice[j]] == vertice1 || vertices[indice[j + 2]] == vertice1))
             {
                 return i;
             }
-            else if (vertices[triangles[j + 1]] == vertice1 && (vertices[triangles[j]] == vertice2 || vertices[triangles[j + 2]] == vertice2))
+            else if (vertices[indice[j + 1]] == vertice1 && (vertices[indice[j]] == vertice2 || vertices[indice[j + 2]] == vertice2))
             {
                 return i;
             }
-            else if (vertices[triangles[j + 2]] == vertice2 && (vertices[triangles[j]] == vertice1 || vertices[triangles[j + 1]] == vertice1))
+            else if (vertices[indice[j + 2]] == vertice2 && (vertices[indice[j]] == vertice1 || vertices[indice[j + 1]] == vertice1))
             {
                 return i;
             }
-            else if (vertices[triangles[j + 2]] == vertice1 && (vertices[triangles[j]] == vertice2 || vertices[triangles[j + 1]] == vertice2))
-            {
-                return i;
-            }
-            i++;
-            j += 3;
-        }
-        return -1;
-    }
-    int FindTriangleIndex2(Vector3 vertice1, Vector3 vertice2, Mesh mesh)
-    {
-        int[] triangles = mesh.triangles;
-        Vector3[] vertices = mesh.vertices;
-        int i = 0;
-        int j = 0;
-
-        while (j < triangles.Length)
-        {
- 
-            if (vertices[triangles[j]] == vertice1 && (vertices[triangles[j + 1]] == vertice2 || vertices[triangles[j + 2]] == vertice2))
-            {
-                return i;
-            }
-            else if (vertices[triangles[j]] == vertice2 && (vertices[triangles[j + 1]] == vertice1 || vertices[triangles[j + 2]] == vertice1))
-            {
-                return i;
-            }
-            else if (vertices[triangles[j + 1]] == vertice2 && (vertices[triangles[j]] == vertice1 || vertices[triangles[j + 2]] == vertice1))
-            {
-                return i;
-            }
-            else if (vertices[triangles[j + 1]] == vertice1 && (vertices[triangles[j]] == vertice2 || vertices[triangles[j + 2]] == vertice2))
-            {
-                return i;
-            }
-            else if (vertices[triangles[j + 2]] == vertice2 && (vertices[triangles[j]] == vertice1 || vertices[triangles[j + 1]] == vertice1))
-            {
-                return i;
-            }
-            else if (vertices[triangles[j + 2]] == vertice1 && (vertices[triangles[j]] == vertice2 || vertices[triangles[j + 1]] == vertice2))
+            else if (vertices[indice[j + 2]] == vertice1 && (vertices[indice[j]] == vertice2 || vertices[indice[j + 1]] == vertice2))
             {
                 return i;
             }
@@ -518,4 +480,6 @@ public class ModifySkinnedMesh : MonoBehaviour
         }
         return -1;
     }
+
+  
 }
