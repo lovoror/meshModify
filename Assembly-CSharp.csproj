@@ -206,7 +206,9 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\Boing Kit\Shader\Internal\BoingKitCore.cginc" />
      <None Include="Assets\Wireframe\Shaders\WireframeShaded-Unlit.shader" />
+     <None Include="Assets\Boing Kit\Examples\Common\UnityChan\Models\UnityChanShader\Shader\readme.txt" />
      <None Include="Assets\Boing Kit\Shader\Internal\SpringFloat4.cginc" />
+     <None Include="Assets\CMUMocap\Acknowledgement.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
      <None Include="Assets\Shaders_BUNDLE\Particles\ParticlesAlphaBlended.shader" />
@@ -221,6 +223,7 @@
      <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
      <None Include="Assets\Wireframe\Shaders\Resources\WireframeTransparent-Global.shader" />
      <None Include="Assets\Boing Kit\Shader\BoingKit.cginc" />
+     <None Include="Assets\RASCAL\Readme.txt" />
      <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
      <None Include="Assets\Boing Kit\Script\Resources\Boing Kit\BoingReactorFieldCompute.compute" />
      <None Include="Assets\Boing Kit\Shader\Internal\Vector.cginc" />
@@ -228,6 +231,7 @@
      <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
      <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\Boing Kit\README.txt" />
      <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
      <None Include="Assets\SkinnedVertexModifier\Noise.shader" />
      <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
@@ -256,6 +260,7 @@
      <None Include="Assets\SkinnedVertexModifier\Shrink.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Shaders_BUNDLE\TGP_Basic_OneLight.shader" />
+     <None Include="Assets\AnimeGirlAnimations_free\Readme.txt" />
      <None Include="Assets\Boing Kit\Shader\BoingKitStandardCoreForwardSimple.cginc" />
      <None Include="Assets\Wireframe\Shaders\Resources\Wireframe-Global.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />

@@ -11,6 +11,8 @@ public class ModifySkinnedMesh : MonoBehaviour
     public Mesh mesh;
     Vector3 hitPos;
 
+    List<List<int>> QuadList = new List<List<int>> ();
+
     Vector3[] verArray;
     Vector3 verPos1;
     Vector3 verPos2;
@@ -22,6 +24,8 @@ public class ModifySkinnedMesh : MonoBehaviour
         meshRenderer.sharedMesh = mesh;
         verArray = new Vector3[mesh.vertexCount];
         ConvertMesh(mesh);
+        GetWorldVerticePos();
+        FindAllQuad();
     }
     void Update()
     {
@@ -32,7 +36,6 @@ public class ModifySkinnedMesh : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 1000))
             {
-               
                 hitPos = hit.point;
                 int index = HitTestMesh(mesh, hitPos);
                 if(index > -1)
@@ -44,19 +47,9 @@ public class ModifySkinnedMesh : MonoBehaviour
 
             }
             Debug.DrawRay(ray.origin, ray.direction *10, Color.green);
-
-            
         }
-
-        
     }
-    //void UpdateSkinnedMesh()
-    //{
-    //    Vector3[] Verts, Nrm;
-    //    Verts = mesh.vertices;
-    //    Nrm = mesh.normals;
-    //    mesh.vertices = Verts;
-    //}
+
     int HitTestMesh(Mesh source, Vector3 hitPos)
     {
         // Input
@@ -90,6 +83,7 @@ public class ModifySkinnedMesh : MonoBehaviour
 
             if (hit)
             {
+                Debug.Log(string.Format("{0}/{1}/{2}",i1,i2,i3));
                 verPos1 = v1;
                 verPos2 = v2;
                 verPos3 = v3;
@@ -100,22 +94,32 @@ public class ModifySkinnedMesh : MonoBehaviour
         }
         return -1;
     }
+    bool drawOnce = false;
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0);
 
         //Gizmos.DrawCube(hitPos, new Vector3(0.1f, 0.1f, 0.1f));
+         
+        if(verArray == null)
+            return;
+        for(int i = 0; i< verArray.Length; ++i)
+        {
+           Gizmos.DrawCube(verArray[i], new Vector3(0.1f, 0.1f, 0.1f));
+        }
 
+            // for(int i = 0 ; i< QuadList.Count;++i){
+            //     foreach(var item in QuadList[i]){
+                    
+                    
+                  
+            //          var vPos = verArray[item];
+            //          Gizmos.DrawCube(vPos, new Vector3(0.01f, 0.01f, 0.01f)); 
+                       
+            //     }
+            // }
+         
         
-        //for(int i = 0; i< verArray.Length; ++i)
-        //{
-        //    Gizmos.DrawCube(verArray[i], new Vector3(0.1f, 0.1f, 0.1f));
-        //}
-
-
-        Gizmos.DrawCube(verPos1, new Vector3(0.01f, 0.01f, 0.01f));
-        Gizmos.DrawCube(verPos2, new Vector3(0.01f, 0.01f, 0.01f));
-        Gizmos.DrawCube(verPos3, new Vector3(0.01f, 0.01f, 0.01f));
     }
 
     Mesh ConvertMesh(Mesh source)
@@ -337,7 +341,6 @@ public class ModifySkinnedMesh : MonoBehaviour
             }
         }
        mesh.triangles = newTriangles;
-      
     }
 
     void StartDeleteQuadPoint(int HitIndex)
@@ -379,20 +382,6 @@ public class ModifySkinnedMesh : MonoBehaviour
         
        
          DeleteQuad(triIdx, nextTriangle);
-    }
-   
-
-    int FindVertexIndex(Mesh mesh, Vector3 vertice)
-    {
-        Vector3[] vertices = mesh.vertices;
-        for (int i = 0; i < vertices.Length; ++i)
-        {
-            if (vertices[i] == vertice)
-            {
-                return i;
-            }
-        }
-        return -1;
     }
 
     int FindTriangleIndex(Vector3 vertice1, Vector3 vertice2, Vector3 vertice3, Mesh mesh, Vector3[] verArray)
@@ -481,5 +470,67 @@ public class ModifySkinnedMesh : MonoBehaviour
         return -1;
     }
 
-  
+    
+    void FindAllQuad()
+    {
+        var inIndices = mesh.GetIndices(0);
+        for (var i = 0; i < inIndices.Length; i += 3)
+        {
+            var i1 = inIndices[i];
+            var i2 = inIndices[i + 1];
+            var i3 = inIndices[i + 2];
+
+            var v1 = verArray[i1];
+            var v2 = verArray[i2];
+            var v3 = verArray[i3];
+
+            var vecA = v2 - v1;
+            var vecB = v3 - v1;
+
+            var area = Vector3.Cross(vecA,vecB).magnitude * 0.5f;
+
+            bool findQuad = false;
+            
+            for(var j = 0; j < inIndices.Length; j+=3){
+
+                var i4 = inIndices[j];
+                var i5 = inIndices[j + 1];
+                var i6 = inIndices[j + 2];
+                
+                if(((i5 == i2 && i6 == i3) || (i5 == i3 && i6 == i2)) && i4 != i1)
+                {
+                    var vecC = v2 - verArray[i4];
+                    var vecD = v3 - verArray[i4];
+                    var area2 = Vector3.Cross(vecC,vecD).magnitude;
+                    if(area == area2){
+                        findQuad = true;
+                        var innerList = new List<int>();
+                        innerList.Add(i1);
+                        innerList.Add(i2); 
+                        innerList.Add(i3); 
+                        innerList.Add(i4);   
+                        QuadList.Add(innerList);
+                        break;
+                    }
+                }
+              
+            }
+
+            // if(!findQuad){
+            //     var innerList = new List<int>();
+            //     innerList.Add(i1);
+            //     innerList.Add(i2); 
+            //     innerList.Add(i3); 
+            //     QuadList.Add(innerList);
+            // }
+           
+        }
+        Debug.Log(QuadList.Count);
+        for(int i = 0 ; i< QuadList.Count;++i){
+            foreach(var item in QuadList[i]){
+                Debug.Log(string.Format("{0}/{1}",i,item));
+            }
+        }
+    }
+
 }

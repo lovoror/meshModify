@@ -58,6 +58,7 @@
      <None Include="Assets\Plugins\MeshDebugger\Shaders\WireFrame.shader" />
      <None Include="Assets\Plugins\MeshDebugger\Shaders\InternalLineColorful.shader" />
      <None Include="Assets\Plugins\MeshDebugger\Shaders\DebugFrontBack.shader" />
+     <None Include="Assets\Plugins\MeshDebugger\Readme.txt" />
      <None Include="Assets\Plugins\MeshDebugger\Shaders\DebugUV.shader" />
      <None Include="Assets\Plugins\MeshDebugger\Shaders\DebugTangent.shader" />
      <None Include="Assets\Plugins\MeshDebugger\Shaders\DebugColor.shader" />
