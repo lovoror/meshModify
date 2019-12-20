@@ -6,6 +6,7 @@ using System.Linq;
 [ExecuteInEditMode]
 public class HandleLabel : MonoBehaviour
 {
+    public ModifySkinnedMesh meshEdit;
     public SkinnedMeshRenderer meshRenderer;
     public Mesh mesh;
     private Vector3[] verArray;
@@ -24,7 +25,7 @@ public class HandleLabel : MonoBehaviour
     public List<int> CanGoIndex(int curIndex)
     {
         List<int> returnIdx = new List<int>();
-        List<int> exceptIndex = new List<int>();
+       
         if (indiceArray == null)
             return returnIdx;
         int j = 0;
@@ -38,7 +39,10 @@ public class HandleLabel : MonoBehaviour
         }
         return returnIdx;
     }
-
+    public int[] AllIndice()
+    {
+      return indiceArray;
+    }
     Mesh ConvertMesh(Mesh source)
     {
         // Input

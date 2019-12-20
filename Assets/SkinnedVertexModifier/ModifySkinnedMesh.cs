@@ -6,18 +6,19 @@ using System.Linq;
 
 public class ModifySkinnedMesh : MonoBehaviour
 {
+    [SerializeField]int testIndex = 0;
     public SkinnedMeshRenderer meshRenderer;
     
     public Mesh mesh;
     Vector3 hitPos;
 
     List<List<int>> QuadList = new List<List<int>> ();
-
+    List<int> QuadExceptList = new List<int>();
     Vector3[] verArray;
     Vector3 verPos1;
     Vector3 verPos2;
     Vector3 verPos3;
-
+    bool findQuad =false;
     void Start()
     {
         mesh = (Mesh)Instantiate(meshRenderer.sharedMesh);
@@ -103,19 +104,27 @@ public class ModifySkinnedMesh : MonoBehaviour
          
         if(verArray == null)
             return;
-        for(int i = 0; i< verArray.Length; ++i)
+        for(int i = 0; i< QuadList.Count; ++i)
         {
-           Gizmos.DrawCube(verArray[i], new Vector3(0.1f, 0.1f, 0.1f));
+            List<int> indexList = QuadList[i];
+            if(indexList.Count == 4){
+                  Gizmos.DrawLine(verArray[indexList[0]],verArray[indexList[1]]);  
+                Gizmos.DrawLine(verArray[indexList[0]],verArray[indexList[2]]);  
+                Gizmos.DrawLine(verArray[indexList[3]],verArray[indexList[1]]);  
+                Gizmos.DrawLine(verArray[indexList[3]],verArray[indexList[2]]);        
+            }
+            if(indexList.Count == 3){
+                Gizmos.DrawLine(verArray[indexList[0]],verArray[indexList[1]]);  
+                Gizmos.DrawLine(verArray[indexList[1]],verArray[indexList[2]]);  
+                Gizmos.DrawLine(verArray[indexList[0]],verArray[indexList[2]]);  
+            }
+             
         }
 
             // for(int i = 0 ; i< QuadList.Count;++i){
             //     foreach(var item in QuadList[i]){
-                    
-                    
-                  
             //          var vPos = verArray[item];
-            //          Gizmos.DrawCube(vPos, new Vector3(0.01f, 0.01f, 0.01f)); 
-                       
+            //          Gizmos.DrawCube(vPos, new Vector3(0.01f, 0.01f, 0.01f));            
             //     }
             // }
          
@@ -479,51 +488,105 @@ public class ModifySkinnedMesh : MonoBehaviour
             var i1 = inIndices[i];
             var i2 = inIndices[i + 1];
             var i3 = inIndices[i + 2];
-
+           
+            List<int> idxList1 = new List<int>();
+               
             var v1 = verArray[i1];
             var v2 = verArray[i2];
             var v3 = verArray[i3];
 
-            var vecA = v2 - v1;
-            var vecB = v3 - v1;
-
-            var area = Vector3.Cross(vecA,vecB).magnitude * 0.5f;
-
-            bool findQuad = false;
-            
+            findQuad = false;
             for(var j = 0; j < inIndices.Length; j+=3){
+                idxList1.Clear();
+                idxList1.Add(i1);
+                idxList1.Add(i2);
+                idxList1.Add(i3);
 
                 var i4 = inIndices[j];
                 var i5 = inIndices[j + 1];
                 var i6 = inIndices[j + 2];
-                
-                if(((i5 == i2 && i6 == i3) || (i5 == i3 && i6 == i2)) && i4 != i1)
-                {
-                    var vecC = v2 - verArray[i4];
-                    var vecD = v3 - verArray[i4];
-                    var area2 = Vector3.Cross(vecC,vecD).magnitude;
-                    if(area == area2){
-                        findQuad = true;
-                        var innerList = new List<int>();
-                        innerList.Add(i1);
-                        innerList.Add(i2); 
-                        innerList.Add(i3); 
-                        innerList.Add(i4);   
-                        QuadList.Add(innerList);
-                        break;
-                    }
-                }
-              
-            }
+       
+                List<int> idxList = new List<int>();
+                List<int> idxList2 = new List<int>();
 
-            // if(!findQuad){
-            //     var innerList = new List<int>();
-            //     innerList.Add(i1);
-            //     innerList.Add(i2); 
-            //     innerList.Add(i3); 
-            //     QuadList.Add(innerList);
-            // }
-           
+                idxList2.Add(i4);
+                idxList2.Add(i5);
+                idxList2.Add(i6);
+                
+                if(i4 == i1 || i4 == i2 || i4 == i3){
+                    idxList.Add(i4);
+                    idxList1.Remove(i4);
+                    idxList2.Remove(i4);
+                }
+                    
+                if(i5 == i1 || i5 == i2 || i5 == i3){
+                    idxList.Add(i5);
+                    idxList1.Remove(i5);
+                    idxList2.Remove(i5);
+                }
+                   
+                if(i6 == i1 || i6 == i2 || i6 == i3){
+                    idxList.Add(i6);
+                    idxList1.Remove(i6);
+                    idxList2.Remove(i6);
+                }
+  
+                if(idxList.Count == 2 && idxList1.Count == 1 && idxList2[0] != idxList1[0])
+                {
+                     var vec = verArray[idxList[0]] - verArray[idxList[1]];
+                    
+                    var vec1 = verArray[idxList1[0]]- verArray[idxList[0]];
+                    var vec2 = verArray[idxList2[0]]- verArray[idxList[0]];
+                    var vec3 = verArray[idxList1[0]]- verArray[idxList[1]];
+                    var vec4 = verArray[idxList2[0]]- verArray[idxList[1]];
+                    
+                    if(vec.magnitude < vec1.magnitude || vec.magnitude < vec2.magnitude  || vec.magnitude < vec3.magnitude ||vec.magnitude < vec4.magnitude){
+                        QuadExceptList.Clear();
+                        QuadExceptList.Add(idxList1[0]);
+                        QuadExceptList.Add(idxList[0]); 
+                        QuadExceptList.Add(idxList[1]); 
+                        QuadExceptList.Add(idxList2[0]);         
+                        continue;
+                    }
+                        
+
+                    var innerList = new List<int>();
+                    innerList.Add(idxList1[0]);
+                    innerList.Add(idxList[0]); 
+                    innerList.Add(idxList[1]); 
+                    innerList.Add(idxList2[0]);        
+
+                    QuadList.Add(innerList);
+                    findQuad = true;
+                    break;
+                }
+            }
+            if(!findQuad && QuadExceptList.Count == 4)
+            {
+                
+                Debug.Log(QuadExceptList[0]);
+                Debug.Log(QuadExceptList[1]);
+                Debug.Log(QuadExceptList[2]);
+                Debug.Log(QuadExceptList[3]);
+
+                var innerList = new List<int>();
+                innerList.Add(QuadExceptList[0]);
+                innerList.Add(QuadExceptList[1]);
+                innerList.Add(QuadExceptList[2]);
+                innerList.Add(QuadExceptList[3]);   
+                QuadList.Add(innerList);
+            }
+            if(!findQuad && QuadExceptList.Count == 0 && idxList1.Count == 3)
+            {
+                Debug.Log(i);
+                Debug.Log(idxList1.Count);
+                var innerList = new List<int>();
+                innerList.Add(idxList1[0]);
+                innerList.Add(idxList1[1]);
+                innerList.Add(idxList1[2]);
+                    
+                QuadList.Add(innerList);
+            }
         }
         Debug.Log(QuadList.Count);
         for(int i = 0 ; i< QuadList.Count;++i){

@@ -18,10 +18,13 @@ class HandleLabelEditor : Editor
     void OnSceneGUI()
     {
         HandleLabel handleExample = (HandleLabel)target;
-        if (handleExample == null)
+        if (handleExample == null ) 
         {
             return;
         }
+
+        GUIStyle textStyle = new GUIStyle();
+        textStyle.fontSize =10;
 
         Handles.BeginGUI();
         input = GUILayout.TextField(input);
@@ -33,20 +36,22 @@ class HandleLabelEditor : Editor
         }
         Handles.EndGUI();
 
-        List<int> indexArray = handleExample.CanGoIndex(range);
+        //List<int> indexArray = handleExample.CanGoIndex(range);
 
         Handles.color = Color.blue;
       
-            
-
-            for (var j = 0; j < indexArray.Count; j++)
-            {
-            
-                    var v1 = handleExample.VertexArray[indexArray[j]];
-                    Handles.Label(v1, indexArray[j].ToString());
-                
-              
-            }
+        if(handleExample.VertexArray == null)
+            return;
+        // if(range < handleExample.VertexArray.Length)
+        // {
+        //     var v1 = handleExample.VertexArray[range];
+        //      Handles.Label(v1, range.ToString(), textStyle);
+        // }
+        for (var j = 0; j < range; j++)
+        {
+            var v1 = handleExample.VertexArray[j];
+            Handles.Label(v1, j.ToString());
+        }
              
               
         
