@@ -47,10 +47,21 @@ class HandleLabelEditor : Editor
         //     var v1 = handleExample.VertexArray[range];
         //      Handles.Label(v1, range.ToString(), textStyle);
         // }
-        for (var j = 0; j < range; j++)
+        List<Vector3> showList = new List<Vector3>();
+        if(range < handleExample.VertexArray.Length)
         {
-            var v1 = handleExample.VertexArray[j];
-            Handles.Label(v1, j.ToString());
+        
+            for (var j = 700; j < 1100; j++)
+            {
+                var v1 = handleExample.VertexArray[j];
+                if(showList.Contains(v1)){
+                     Handles.Label(new Vector3(v1.x, v1.y + 0.005f, v1.z), j.ToString());
+                }else{
+                   Handles.Label(new Vector3(v1.x, v1.y, v1.z), j.ToString());
+                   showList.Add(v1);      
+                }
+               
+            }
         }
              
               
