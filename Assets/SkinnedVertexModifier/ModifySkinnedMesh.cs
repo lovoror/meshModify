@@ -3,7 +3,14 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
-
+public enum WaySide
+{
+    NONE,
+    UP,
+    DOWN,
+    RIGHT,
+    LEFT
+}
 public class ModifySkinnedMesh : MonoBehaviour
 {
     [SerializeField]int testIndex = 0;
@@ -15,6 +22,7 @@ public class ModifySkinnedMesh : MonoBehaviour
     List<List<int>> QuadList = new List<List<int>> ();
      List<List<int>> QuadList_Add = new List<List<int>> ();
     List<int> QuadExceptList = new List<int>();
+     Dictionary<int,List<int>> moveIndex = new Dictionary<int,List<int>>();
     Vector3[] verArray;
     Vector3 verPos1;
     Vector3 verPos2;
@@ -96,7 +104,7 @@ public class ModifySkinnedMesh : MonoBehaviour
         }
         return -1;
     }
-    bool drawOnce = false;
+
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0);
@@ -545,11 +553,6 @@ public class ModifySkinnedMesh : MonoBehaviour
                             continue;
                         }
                     }
-                    // QuadExceptList = new List<int>();
-                    // QuadExceptList.Add(idxList1[0]);
-                    // QuadExceptList.Add(idxList[0]); 
-                    // QuadExceptList.Add(idxList[1]); 
-                    // QuadExceptList.Add(idxList2[0]);  
 
                     var vec = verArray[idxList[0]] - verArray[idxList[1]];
                     
@@ -574,7 +577,6 @@ public class ModifySkinnedMesh : MonoBehaviour
                         }
                         continue;
                     }
-                        
 
                     var innerList = new List<int>();
                     innerList.Add(idxList1[0]);
@@ -590,45 +592,23 @@ public class ModifySkinnedMesh : MonoBehaviour
             }
             if(!findQuad && QuadExceptList.Count > 0){
                 QuadList.Add(QuadExceptList);
-            }
-            // if(!findQuad)
-            // {
-            //     foreach(var item in QuadList_Add){
-            //       Debug.Log(item[0].ToString() + " / " + item[1].ToString() + " / "+item[2].ToString()+ " / "+item[3].ToString());
-            //       QuadList.Add(item);
-            //     }
-            //     QuadList_Add.Clear();
-               
-            // }
-            // if(!findQuad && QuadExceptList.Count == 4)
-            // {
-                
-            //     Debug.Log(QuadExceptList[0].ToString() + " / 0");
-            //     Debug.Log(QuadExceptList[1].ToString() + " / 1");
-            //     Debug.Log(QuadExceptList[2].ToString() + " / 2");
-            //     Debug.Log(QuadExceptList[3].ToString() + " / 3");
-
-            //     var innerList = new List<int>();
-            //     innerList.Add(QuadExceptList[0]);
-            //     innerList.Add(QuadExceptList[1]);
-            //     innerList.Add(QuadExceptList[2]);
-            //     innerList.Add(QuadExceptList[3]);   
-            //     QuadList.Add(innerList);
-            //     QuadExceptList.Clear();
-            // }
-            // if(!findQuad && QuadExceptList.Count == 0 && idxList1.Count == 3)
-            // {
-            //     Debug.Log("triangle");
-            //     Debug.Log(idxList1[0].ToString() + " / " +idxList1[1].ToString() + " / "+idxList1[2].ToString());
-            //     var innerList = new List<int>();
-            //     innerList.Add(idxList1[0]);
-            //     innerList.Add(idxList1[1]);
-            //     innerList.Add(idxList1[2]);
-                    
-            //     QuadList.Add(innerList);
-            // }
+            }       
         }
-       
     }
+     public void SetWay(List<int> idxList)
+    {
+        if(idxList.Count == 4){
+            if(moveIndex.ContainsKey(idxList[0]) != false){
+                moveIndex.Add(idxList[0],new List<int>());
+                moveIndex[idxList[0]].Add(idxList[1]);
+            }
+        }
 
+    }
+    public WaySide CheckWay(int index)
+    {
+
+        return WaySide.NONE;
+
+    }
 }
